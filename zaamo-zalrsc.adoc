@@ -17,9 +17,6 @@
 // needs to be changed? bug discussion started
 //:WaveDromEditorApp: app/wavedrom-editor.app
 :imagesoutdir: images
-:bibtex-file: zaamo-zalrsc.bib
-:bibtex-order: occurrence
-:bibtex-style: ieee
 :icons: font
 :lang: en
 :listing-caption: Listing
