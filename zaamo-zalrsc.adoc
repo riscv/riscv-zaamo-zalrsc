@@ -99,7 +99,7 @@ A-extension instructions.
 [NOTE]
 ====
 The fetch-and-op style atomic primitives provided by the A extension support
-better scaling for highly parallel systems. Simpler implementations that can
-do not have such scaling requirements may implement Zalrsc subset of the A
-extension to support atomic primitives.
+better scaling for highly parallel systems. Simpler implementations that do not
+have such scaling requirements may implement Zalrsc subset of the A extension to
+support atomic primitives.
 ====
