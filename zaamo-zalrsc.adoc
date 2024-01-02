@@ -60,7 +60,7 @@ Ved Shanbhogue
 
 == Atomic Memory Operations Extension (Zaamo) 
 
-The Zaamo extension implements the atomic memory operations subset of the A
+The Zaamo extension implements the atomic memory operation (AMO) subset of the A
 extension. The Zaamo extension provides the following instructions:
 
 * `AMOSWAP.W/D`
@@ -72,16 +72,16 @@ extension. The Zaamo extension provides the following instructions:
 * `AMOMIN[U].W/D`
 
 The encodings and operations, including the requirements posed on alignment of
-address held in `rs1`, are identical to those of the corresponding A-extension
-instructions. The Zam extension relaxes the address alignment requirements for
-Zaamo and specifies the semantics for misaligned AMOs.
+the address held in `rs1`, are identical to those of the corresponding A
+extension instructions. The Zam extension relaxes the address alignment
+requirements for Zaamo and specifies the semantics for misaligned AMOs.
 
 [NOTE]
 ====
-The Zaamo extension enables microcontroller implementations to implement the
-atomic primitives using the atomic memory operations subset of the A extension.
-Typically such implementations do not have caches and may not be able to
-naturally support the `LR`/`SC` instructions provided by the A extension.
+The Zaamo extension enables microcontroller class implementations to implement
+atomic primitives using the AMO subset of the A extension. Typically such
+implementations do not have caches and thus may not be able to naturally support
+the `LR`/`SC` instructions provided by the A extension.
 ====
 
 == Load-Reserved/Store-conditional Extension (Zalrsc) 
@@ -101,5 +101,5 @@ A-extension instructions.
 The fetch-and-op style atomic primitives provided by the A extension support
 better scaling for highly parallel systems. Simpler implementations that can
 do not have such scaling requirements may implement Zalrsc subset of the A
-extension to support atomic priimitives.
+extension to support atomic primitives.
 ====
