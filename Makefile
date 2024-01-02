@@ -13,13 +13,13 @@
 # the Doc Template for RISC-V Extensions.
 
 DATE ?= $(shell date +%Y-%m-%d)
-VERSION ?= v0.0.0
-REVMARK ?= Draft
+VERSION ?= v0.7.0
+REVMARK ?= Development
 DOCKER_RUN := docker run --rm -v ${PWD}:/build -w /build \
 riscvintl/riscv-docs-base-container-image:latest
 
-HEADER_SOURCE := header.adoc
-PDF_RESULT := spec-sample.pdf
+HEADER_SOURCE := zaamo-zalrsc.adoc
+PDF_RESULT := riscv-zaamo-zalrsc.pdf
 
 ASCIIDOCTOR_PDF := asciidoctor-pdf
 OPTIONS := --trace \
@@ -29,7 +29,7 @@ OPTIONS := --trace \
            -a revremark=${REVMARK} \
            -a revdate=${DATE} \
            -a pdf-fontsdir=docs-resources/fonts \
-           -a pdf-theme=docs-resources/themes/riscv-pdf.yml \
+           -a pdf-style=docs-resources/themes/riscv-pdf.yml \
            --failure-level=ERROR
 REQUIRES := --require=asciidoctor-bibtex \
             --require=asciidoctor-diagram \
@@ -41,7 +41,7 @@ all: build
 
 build: 
 	@echo "Checking if Docker is available..."
-	@if command -v docker >/dev/null 2>&1 ; then \
+	@if command -v docker &> /dev/null ; then \
 		echo "Docker is available, building inside Docker container..."; \
 		$(MAKE) build-container; \
 	else \
