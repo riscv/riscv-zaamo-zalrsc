@@ -73,8 +73,7 @@ extension. The Zaamo extension provides the following instructions:
 
 The encodings and operations, including the requirements posed on alignment of
 the address held in `rs1`, are identical to those of the corresponding A
-extension instructions. The Zam extension relaxes the address alignment
-requirements for Zaamo and specifies the semantics for misaligned AMOs.
+extension instructions.
 
 [NOTE]
 ====
