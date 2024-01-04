@@ -60,8 +60,8 @@ Ved Shanbhogue
 
 == Atomic Memory Operations Extension (Zaamo) 
 
-The Zaamo extension implements the atomic memory operation (AMO) subset of the A
-extension. The Zaamo extension provides the following instructions:
+The Zaamo extension comprises the atomic memory operation (AMO) subset of the A
+extension, consisting of the following instructions:
 
 * `AMOSWAP.W/D`
 * `AMOADD.W/D`
@@ -70,10 +70,6 @@ extension. The Zaamo extension provides the following instructions:
 * `AMOXOR.W/D`
 * `AMOMAX[U].W/D`
 * `AMOMIN[U].W/D`
-
-The encodings and operations, including the requirements posed on alignment of
-the address held in `rs1`, are identical to those of the corresponding A
-extension instructions.
 
 [NOTE]
 ====
@@ -85,15 +81,8 @@ the `LR`/`SC` instructions provided by the A extension.
 
 == Load-Reserved/Store-conditional Extension (Zalrsc) 
 
-The Zalrsc extension implements the Load-Reserved/Store-Conditional instruction
-subset of the A extension. The Zalrsc extension provides the following
-instructions:
-
-* `LR.W/D`
-* `SC.W/D`
-
-The encodings and operations are identical to those of the corresponding
-A-extension instructions.
+The Zalrsc extension comprises the Load-Reserved/Store-Conditional instruction
+subset of the A extension, consisting of the `LR.W/D` and `SC.W/D` instructions.
 
 [NOTE]
 ====
