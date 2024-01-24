@@ -61,7 +61,19 @@ Ved Shanbhogue
 == Atomic Memory Operations Extension (Zaamo) 
 
 The Zaamo extension comprises the atomic memory operation (AMO) subset of the A
-extension, consisting of the following instructions:
+extension.
+
+For RV32, the Zaamo extension includes the following instructions:
+
+* `AMOSWAP.W`
+* `AMOADD.W`
+* `AMOAND.W`
+* `AMOOR.W`
+* `AMOXOR.W`
+* `AMOMAX[U].W`
+* `AMOMIN[U].W`
+
+For RV64, the Zaamo extension includes the following instructions:
 
 * `AMOSWAP.W/D`
 * `AMOADD.W/D`
@@ -71,20 +83,24 @@ extension, consisting of the following instructions:
 * `AMOMAX[U].W/D`
 * `AMOMIN[U].W/D`
 
+The Zacas extension depends on the Zaamo extension.
+
 [NOTE]
 ====
-The Zaamo extension enables microcontroller class implementations to implement
-atomic primitives using the AMO subset of the A extension. Typically such
+The Zaamo extension enables microcontroller class implementations to utilize
+atomic primitives from the AMO subset of the A extension. Typically such
 implementations do not have caches and thus may not be able to naturally support
 the `LR`/`SC` instructions provided by the A extension.
 ====
 
-The Zacas extension depends on the Zaamo extension.
-
 == Load-Reserved/Store-conditional Extension (Zalrsc) 
 
 The Zalrsc extension comprises the Load-Reserved/Store-Conditional instruction
-subset of the A extension, consisting of the `LR.W/D` and `SC.W/D` instructions.
+subset of the A extension.
+
+For RV32, the Zalrsc extension includes the `LR.W` and `SC.W` instructions.
+
+For RV64, the Zalrsc extension includes the `LR.W/D` and `SC.W/D` instructions.
 
 [NOTE]
 ====
