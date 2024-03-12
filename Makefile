@@ -31,8 +31,10 @@ OPTIONS := --trace \
            -a pdf-fontsdir=docs-resources/fonts \
            -a pdf-style=docs-resources/themes/riscv-pdf.yml \
            --failure-level=ERROR
-REQUIRES := --require=asciidoctor-diagram \
+REQUIRES := --require=asciidoctor-bibtex \
+            --require=asciidoctor-diagram \
             --require=asciidoctor-mathematical
+
 
 .PHONY: all build clean build-container build-no-container
 
