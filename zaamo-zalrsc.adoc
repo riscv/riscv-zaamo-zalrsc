@@ -1,4 +1,4 @@
-[[header]]
+= Zaamo and Zalrsc Extensions
 :description: Zaamo and Zalrsc Extensions
 :company: RISC-V.org
 :revdate: 12/2023
@@ -33,9 +33,10 @@ endif::[]
 :footnote:
 :xrefstyle: short
 
-= Zaamo and Zalrsc Extensions
 
-// Preamble
+[preface]
+== Preamble
+
 [WARNING]
 .This document is in the link:http://riscv.org/spec-state[Development state]
 ====
@@ -44,7 +45,6 @@ accepted as standard, so implementations made to this draft specification will
 likely not conform to the future standard.
 ====
 
-[preface]
 === Copyright and license information
 This specification is licensed under the Creative Commons
 Attribution 4.0 International License (CC-BY 4.0). The full
@@ -53,7 +53,6 @@ https://creativecommons.org/licenses/by/4.0/.
 
 Copyright 2023 by RISC-V International.
 
-[preface]
 === Contributors
 This RISC-V specification has been contributed to directly or indirectly by:
 Ved Shanbhogue
