@@ -17,6 +17,9 @@
 // needs to be changed? bug discussion started
 //:WaveDromEditorApp: app/wavedrom-editor.app
 :imagesoutdir: images
+:bibtex-file: zaamo-zalrsc.bib
+:bibtex-order: appearance
+:bibtex-style: ieee
 :icons: font
 :lang: en
 :listing-caption: Listing
@@ -62,7 +65,7 @@ Ved Shanbhogue
 == Atomic Memory Operations Extension (Zaamo) 
 
 The Zaamo extension comprises the atomic memory operation (AMO) subset of the A
-extension.
+extension cite:[unpriv].
 
 For RV32, the Zaamo extension includes the following instructions:
 
@@ -84,7 +87,7 @@ For RV64, the Zaamo extension includes the following instructions:
 * `AMOMAX[U].W/D`
 * `AMOMIN[U].W/D`
 
-The Zacas extension depends on the Zaamo extension.
+The Zacas extension cite:[zacas] depends on the Zaamo extension.
 
 [NOTE]
 ====
@@ -110,3 +113,8 @@ better scaling for highly parallel systems. Simpler implementations that do not
 have such scaling requirements may implement the Zalrsc subset of the A extension
 to support atomic primitives.
 ====
+
+[bibliography]
+== Bibliography
+
+bibliography::[]
