@@ -16,7 +16,7 @@ DATE ?= $(shell date +%Y-%m-%d)
 VERSION ?= v0.7.0
 REVMARK ?= Development
 DOCKER_RUN := docker run --rm -v ${PWD}:/build -w /build \
-riscvintl/riscv-docs-base-container-image:latest
+ghcr.io/riscv/riscv-docs-base-container-image:latest
 
 HEADER_SOURCE := zaamo-zalrsc.adoc
 PDF_RESULT := riscv-zaamo-zalrsc.pdf
